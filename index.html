@@ -16,11 +16,53 @@
 
     <!-- Favicon -->
 <link rel="icon" href="https://imes-co.github.io/ulink/" type="image/x-icon">   
-    <link rel="icon" href="20260204_202417.png" type="image/png">
+<link rel="icon" href="20260204_202417.png" type="image/png">
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+<link rel="shortcut icon" href="favicon.png">
+    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
 
     <style>
+        /* HEADER FLEX STYLE */
+        .main-header {
+    position: relative;
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.header-logo {
+    position: absolute;
+    left: 60px;   /* PC gap */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Logo size */
+.header-logo img {
+    height: 140px;   /* PC বড় logo */
+    width: auto;
+}
+
+/* Text center */
+.header-content {
+    text-align: center;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+
+    .header-logo {
+        left: 15px;  /* Mobile-এ gap কম */
+    }
+
+    .header-logo img {
+        height: 80px;  /* Logo ছোট */
+    }
+}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -308,26 +350,8 @@
     overflow: hidden;
     background-color: #00000; 
 }
-.bgnou {
-    background: #573E7D;
-    border-radius: 14px;
-    padding: 6px 10px;
-    display: flex;              
-    align-items: center;
-    justify-content: center;    
-    gap: 8px;
-    width: 90px;
-    margin: 0 auto 10px auto;   
-}
-.bgnou img {
-    display: block;
-    margin: 0 auto;
-}
-.card-desc {
-    font-size: 13px;
-    color: #666;
-    margin: 0;
-}
+
+
 
 
     </style>
@@ -335,11 +359,19 @@
 
 <body>
 
-<header>
-    <h1>INSdia Global </h1>
-    <p>Others Digital Service Useful Link Portal</p>
-    <a class="back-button" href="http://cfpe.me/indra" target="_blank">Donate Here for Helping</a>
-</header>
+    <header class="main-header">
+
+        <div class="header-logo">
+            <img src="20260204_202417.png" alt="INSdia Logo">
+        </div>
+    
+        <div class="header-content">
+            <h1>INSdia Global</h1>
+            <p>Digital Service Useful Link Portal</p>
+            <a class="back-button" href="#">Donate Here for Helping</a>
+        </div>
+    
+    </header>
 
 <main>
 
